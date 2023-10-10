@@ -8,6 +8,11 @@ namespace TRMDesktopUI.ViewModels
 {
     public class ShellViewModel
     {
-
+        private ICalculations _calculations;
+        //Bring registered interface in constructor
+        public ShellViewModel(ICalculations calculations)
+        {
+            _calculations = calculations;
+        }
     }
 }
